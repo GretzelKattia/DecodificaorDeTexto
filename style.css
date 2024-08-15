@@ -236,6 +236,8 @@ footer a:visited {
 @media (max-width: 1340px) {
   .logo {
     gap: 70%;
+    padding: 25px 0px;
+
   }
 
   .container {
@@ -306,6 +308,8 @@ footer a:visited {
 @media (max-width: 540px) {
   .logo {
     gap: 50%;
+    /* padding: 25px 0px; */
+
   }
 
   .column1 {
@@ -319,5 +323,19 @@ footer a:visited {
   .button_action {
     flex-direction: column;
     gap: 10px;
+  }
+
+  footer {
+    justify-content:space-around;
+  
+  }
+  
+  footer ul{
+    margin: 10px;
+  
+  }
+
+  footer a {
+    gap: 1.5px;
   }
 }
