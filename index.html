@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Encrypt and decrypt your text effortlessly with an user-friendly application. Simply enter your text, encrypt it, and copy the encrypted text. You can also decrypt the text whenever you need." />
+
+    <title>Decodificador</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/alura_icon.jpg" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="./script.js" defer></script>
+    <header class="logo">
+        <div class="logo__img">
+            <img src="./assets/logoAlura.png" alt="logotipo da Alura Latam">
+        </div>
+    </header>
+    <main class="container">
+        <div class="column1">
+            <textarea name="text_field" id="text_field" class="text_field" placeholder="Digite seu texto"
+                onkeydown="digitar()" spellcheck="false" autocorrect="off" autocapitalize="none"
+                autocomplete="off"></textarea>
+            <div class="buttons">
+                <div class="warning">
+                    <span class="icon"><img src="./assets/exclamation.png" alt="exclamation sign icon"></span>
+                    <span class="text_warning">Apenas letras minúsculas e sem acento.</span>
+                </div>
+                <div class="button_action">
+                    <button class="btn cript" onclick="criptografar()">Criptografar</button>
+                    <button class="btn descript" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="column2">
+            <div class="img_container">
+                <img class="img_search" src="./assets/personDetective.png" loading="lazy"
+                    alt="four people searching for something">
+            </div>
+            <div class="no_msg_text">
+                <h2 class="no_msg_text_h2">Nenhuma mensagem encontrada</h2>
+                <span class="no_msg_text_p">Digite um texto que você deseja criptografar ou descriptografar.</span>
+                <p id="p_new" class="p_style"></p>
+            </div>
+            <div class="copy">
+                <button id="btn_copy" class="btn btn_copy">Copiar</button>
+            </div>
+        </div>
+    </main>
+    </div>
+    <footer>
+        <ul>
+            <li>Projeto desenvolvido por Gretzel Kattia</li>
+            <li>|</li>
+            <li>
+                <a href="https://github.com/GretzelKattia" target="_blank"><img src="assets/github-icon.svg"
+                        alt="Logo do GitHub">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/gretzelkattia" target="_blank"><img src="assets/linkedin-icon.svg"
+                        alt="Logo do LinkedIn">LinkedIn</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
